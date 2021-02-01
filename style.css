@@ -99,10 +99,40 @@ p{
     background:var(--yell-col);
     font-size: 0.5rem;
     text-transform: uppercase;
-    padding: 0.4rem 0.6rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 15px;
     margin-bottom: 0.5rem;
 }
+ /* ///////////////own-btn////////////////// */
+ .own-btn:link,
+ .own-btn:visited{
+     font-size: 0.6rem;
+     text-transform: uppercase;
+     text-decoration: none;
+     padding: 6px 15px;
+     color: #333;
+     display: inline-block;
+     border-radius: 16rem;
+     transition: all .3s;
+     position: relative;
+     background: linear-gradient(120deg, var(--yell-col)0%,var(--bg-color)50%,var(--yell-col)50%);
+     background-size: 210%;
+     background-position: 0;
+     
+     
+ }
+ .own-btn:hover{
+     transform: translateY(-3px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+     background-position:  100%;
+     color: #fff;
+ }
+ 
+ .own-btn:active{
+     transform: translateY(-1px);
+     color: #fff;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+ }
 
    /* *****************Nav-Work***************************** */
    .nav{
@@ -386,6 +416,7 @@ transform: scale(1);
 .pro-heading{
     margin-bottom: 2rem;
     width: 220px;
+    padding: 0.5rem;
     
 }
 .projects-contianer{
@@ -415,6 +446,7 @@ transform: scale(1);
     justify-content: center;
     margin:auto;
     padding: 5rem;
+    
 }
 .skills-container{
     width: 100%;
@@ -422,6 +454,7 @@ transform: scale(1);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     
 }
 .skills-container h1{
@@ -523,7 +556,8 @@ transform: scale(1);
 
 }
 .education-section h1{
-    color: var(--yell-col);
+    color: var(--blu-col);
+    font-family: 'Lato',cursive;
 }
 
 .education{
@@ -646,7 +680,12 @@ footer{
 }
 .footer-items{
     text-align: center;
+    color:#fff;
 }
+.footer-items h2{
+    color: VAR(--bg-color);
+}
+
 footer i{
     transform: scale(0.8);
     font-size: 2.6rem;
@@ -658,7 +697,7 @@ footer i:hover{
     text-decoration: none;
     display:inline-block;
     font-size: 1rem;
-    color: var(--secondary-color);
+    color: var(--yell-col);
     cursor: pointer;
     transform: scale(0.9);
     transition: 0.5s;
@@ -694,6 +733,7 @@ footer i:hover{
     
     width: 100%;
     margin: auto;
+    padding: 3rem 0;
     
 }
 #projects h1{
@@ -705,7 +745,7 @@ footer i:hover{
     display: grid;
     /* grid-template-columns: repeat(3,1fr); */
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-gap: 0.5rem;
+    grid-gap:  0.5rem;
 }
 .card{
     height: 400px;
@@ -716,7 +756,15 @@ footer i:hover{
     height: 55%
 }
 #skills{
-    padding: 0;
+    padding: 1rem 0;
+}
+.skills-boxes{
+    padding: 5px;
+}
+#introduction{
+    padding: 1rem 0;
+    margin: 0;
+     
 }
 .introduction-container{
     padding:0;
@@ -728,6 +776,7 @@ footer i:hover{
 .intro-box img{
     height: 300px;
     width: 100%;
+    padding: 0;
     transform: translate(0);
 }
 .intro-2{
