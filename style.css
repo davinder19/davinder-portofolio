@@ -39,11 +39,18 @@ body{
     max-width: 1300px;
     margin: auto;
 } 
+.main-header{
+    font-size: 50px;
+    color: var(--blu-col);
+}
 .mrg-mid{
     margin-top: 80px; 
 }
 .mrg{
     margin-top: 1rem;
+}
+.mrg-big{
+    margin-top: 2rem;
 }
 .py-1{
     padding: 5rem;
@@ -67,6 +74,9 @@ a{
     text-align:center;
     color:var(--sub-color); 
     
+}
+.txt{
+    text-align: center;
 }
 
 h1{
@@ -262,22 +272,7 @@ p{
         background-color: #292929;
         padding: 0 10px;
     }
-    /* .hero p{
-        font-size: 20px;
-        letter-spacing: 1px;
-    }
-.content h2, 
-.content h3{
- font-size: 150%;   
- margin: 10px 0;
- 
 
-}
-.content p{
-    color:#555;
-    line-height: 30px;
-    letter-spacing: 1.2px;
-} */
 .colr{
     background:rgba(255,255,255); 
     border-radius: 20px;
@@ -356,19 +351,19 @@ transform: scale(1);
     display: grid;
     /* grid-template-columns: repeat(5, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    /* grid-gap: 1rem; */
    }
    .about-content-1{
-       /* width:25%; */
+       width:100%;
        /* border: 2px solid red; */
         padding: 5px;
         text-align: center;
         margin: 0 5px;
         line-height: 1.8rem;
-        transform: scale(0.95);
-        transition: 1s ;
+        transition:  all 1s ease-in-out ;
    }
    .about-content-1:hover{
-       transform: scale(1);
+       transform: translateY(-20px) scale(1.05);
    }
    .about-content-1 h2{
         font-size: 20px;
@@ -384,9 +379,10 @@ transform: scale(1);
    .about-content i{
        font-size: 50px;
        color: var(--sub-color);
+       display: inline-block;
    }
    .about-content-1:hover i{
-    /* color: var(--purpl-color); */
+    
     color: var(--primary-color);
     transform: rotateY(160deg);
     
@@ -457,10 +453,10 @@ transform: scale(1);
     
     
 }
-.skills-container h1{
+/* .skills-container h1{
     font-family: fantasy;
     color: var(--blu-col);
-}
+} */
 .skills-box h3{
     text-align: left;
     color: var(--sub-color);
@@ -709,8 +705,6 @@ footer i:hover{
     
 }
 
-
-    /* /////////////////////////////////////////////////////////////////////////////////////////// */
   
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){

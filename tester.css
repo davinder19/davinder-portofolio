@@ -1,0 +1,427 @@
+/* ********************************************* */
+
+
+
+
+
+/* ///////////////////////////////////////////////////////Tools//////////////////////////////////// */
+body{
+background-color: var(--option-bg);
+}
+
+#tools{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 8rem 0;
+}
+.tools{
+        margin-top: -170px;
+    
+
+   /* border: 3px solid teal; */
+   border: 3px solid rgba(0,0,0,0.1);
+   text-align: center;
+   background-color: #ffff;
+
+}
+.tools-contnets{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    border-top: 3px solid rgba(0,0,0,0.1);
+}
+.agile-box{
+    text-align: center;
+    align-self: center;
+}
+.agile-box i{
+    color:rgb(135, 36, 85);
+    background-color: var(--yell-col);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.agile-box-bd{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;;
+    
+}
+.agile-box-bd-1{
+    align-self: flex-start;
+}
+.agile-box-bd-2{
+    margin-left: 10px;
+    text-align: justify;
+}
+.agile-box-img{
+    height: 600px;
+    border-radius: 40px;
+    border-right: 5px solid black;
+    border-left:  5px solid black;
+    border-top: 75px solid black;
+    border-bottom: 75px solid black;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    background-color: orange;
+    
+}
+.agile-box-img img{
+    width: 100%;
+    
+}
+.para{
+    
+    width: 300px;
+    
+    
+    padding: 5px;
+    /* border: 2px solid green; */
+}
+.agile-section-2{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mob-top{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: -43px;
+    left: -5px;
+}
+.point{
+    width: 15px;
+    height: 15px;
+    background-color: #555;
+    border-radius: 50%;
+    
+    
+}
+.line{
+    width: 75px;
+    height: 2px;
+    background-color:#555;
+    margin-left: 10px;
+    
+    
+}
+.circle
+{
+    width: 50px;
+    height: 50px;
+    /* background-color: #333; */
+    border: 2px solid #555;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.bordr{
+    border-top: 3px solid rgba(0,0,0,0.1);
+   
+
+ /* ///////////////////////////////////////////////////////Testing-Cases-Report//////////////////////////////////// */}
+ #bug-test{
+     padding:  15rem 10px;
+     background: linear-gradient(to right bottom,
+     rgba(250,177,49,0.9),
+    rgba(230,157,39, 0.5)),
+    url(img/break.jpg) no-repeat center;
+    background-size: cover;
+    transform: skewY(-3deg);
+
+ }
+ #bug-test > *{
+     transform: skewY(3deg);
+ }
+ .bug-test-section{
+     text-align: center;
+ }
+ .bug-test-section h1{
+     margin-bottom: 5rem;
+ }
+ .bug-test-contain{
+     border: 2px solid red;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(500px,1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+ }
+ .bug-test{
+     /* width: 25%; */
+     background-color: rgba(255,255,255,0.8);
+     text-align: center;
+     font-size: 1.5rem;
+     padding: 2.5rem 1rem;
+     border-radius: 3px;
+     box-shadow:  0 0.5rem 1rem     rgba(0,0,0,0.8);
+     transition: all .5s ease-in-out;
+ }
+ .bug-test i{
+     font-size: 5rem;
+     display: inline-block;
+     background-image: linear-gradient(to right ,
+     rgb(250,177,49),
+     rgba(250,177,49, 0.5));
+     -webkit-background-clip: text;
+     color: transparent;    
+     
+ }
+ .bug-test:hover{
+     transform: translateY(-1.5rem) scale(1.05);
+ }
+/* ///////////////////////////////////////////////////////Testing type//////////////////////////////////// */
+#testing-type{
+    width: 100%;
+    /* background-color: var(--option-bg); */
+    padding: 8rem 20px;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 10rem;;
+    border: 2px solid red;
+    
+}
+.testing-type{
+   text-align: center;
+   margin:auto ;
+   
+}
+.testing-type-contents{
+width: 100%;
+margin: auto;
+position: relative;
+
+}
+
+
+.testing-type-bd{
+    width: 60%;
+    position:absolute;
+    padding: 5rem;
+    text-align: center;
+    transition: all 0.5s;
+    outline-offset: 0.5rem;
+    color: #fff;
+    
+}
+.testing-type-bd p{
+    font-size: 1.5rem;
+    
+}
+.testing-box-1{
+    background: linear-gradient(to right bottom,
+    rgb(240,50,67),
+   rgba(230,157,49, 0.5)),
+   url(img/break.jpg) no-repeat center;
+   background-size: cover;
+  left: 0;
+  top: 3rem;
+    background-color: tomato;
+}
+.testing-box-2{ 
+    background: linear-gradient(to right bottom,
+    rgb(38, 191, 17),
+    rgba(38, 191, 17,.5)),
+   url(img/test-break.jpg) no-repeat center;
+   background-size: cover;
+    right: 0;
+   top: 5rem;
+    
+    background-color: green;
+    
+    
+    
+}
+
+.testing-box-3{
+    background: linear-gradient(to right bottom,
+    rgb(50,134,240),
+   rgba(50,134,240, 0.5)),
+   url(img/bgg.jpg) no-repeat center;
+   background-size: cover;
+    left: 20%;
+    top: 15rem;
+    background-color: orange;
+}
+.testing-type-bd:hover{
+    z-index: 10;
+    transform: scale(1.05);
+    outline: 1rem solid var(--yell-col);
+}
+/* ////////////////////////////////////////Contact/////////////////////////////////////////////////// */
+#contact{
+    padding: 10rem 10px;
+    background: linear-gradient(to right bottom,
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,.8)),
+   url(img/portfolio.jpg) no-repeat center;
+   background-size: cover;
+    
+    
+
+}
+.contact-section{
+    text-align: center;
+}
+.contact-section-parts{
+    height: 600px;
+    background: linear-gradient(105deg,
+    rgba(250,157,39,.9) 0%,
+    rgba(250,157,39,.9) 50%,
+    rgba(255,255,255,.7) 50%),
+   url(img/portfolio.jpg) no-repeat center;
+   background-size: cover;
+   background-size: 100%;
+   border-radius: 3px;
+   box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.8);
+   display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.contact-section-1{
+    padding: 5rem;
+}
+.cont-part-1{
+    font-size: 1rem;;
+    color: #fff;
+    
+}
+.cont-part-2{
+    
+}
+.item{
+    width:100%;
+    /* height: 350px; */
+    overflow: hidden;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 70%;
+    color: #333;
+    background-color: var(--option-bg);
+    border: none;
+    margin-top: 1rem;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+/* .text-input{
+    width: 70%;
+    margin-top: 1rem;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    
+    
+} */
+textarea{
+    width: 70%;
+    margin-top: 1rem;;
+    height: 150px;
+    color: #333;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    padding: 8px;
+    
+}
+textarea:focus{
+color: #333;
+    outline: none;
+    font-size: 1.3rem;
+    
+}
+button{
+    width: 30%;
+    margin-top: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #333;
+    font-size: 1rem;
+    color:  #fff;
+    border: none;
+
+}
+
+    /* /////////////////////////////////////////////////////////////////////////////////////////// */
+ 
+/* ///////////////////////////////////////////////////////MOB-RESPONSIVE//////////////////////////////////// */
+@media(max-width:60rem){
+    .tools{
+        margin-top: 0;
+    }
+
+    .tools-contnets{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    } 
+    .agile-box-img{
+        width: 100%;
+    }
+    /* //////////////////////////////////////////////////////// */
+    #testing-type{
+        margin-bottom: 1rem;
+        /* height: auto; */
+    }
+    .testing-type-bd{
+        width: 100%;
+        padding: 1rem;
+    }
+    .testing-box-2{
+        top: 7rem;
+        left: 0%;
+    }
+    .testing-box-3{
+        top: 12rem;
+        left: 0%;
+    }
+    
+    .testing-type-bd p{
+        font-size: 1rem;
+        
+    }
+    .testing-type-bd:hover{
+        z-index: 10;
+        transform: scale(1.01);
+        outline: 0.2rem solid var(--yell-col);
+    }
+    .contact-section-parts{
+        background:rgba(255,255,255,0.3);
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        
+    }
+    .contact-part-1{
+        padding: 1rem 10px;
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    button{
+        width: 100%;;
+    }
+}
