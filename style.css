@@ -708,6 +708,9 @@ footer i:hover{
   
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){
+    .main-header{
+        font-size: 25px;
+    }
   .nav .nav-contain{
       padding: 20px 5px;
   }
