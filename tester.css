@@ -190,7 +190,7 @@ background-color: var(--option-bg);
     padding: 8rem 20px;
     position: relative;
     height: 100vh;
-    margin-bottom: 10rem;;
+    margin-bottom: 10rem;
     /* border: 2px solid red; */
     
 }
@@ -265,12 +265,14 @@ position: relative;
     display: none;
 }
 .testing-mob{
+    width: 100%;
     background: linear-gradient(to right bottom,
     rgb(50,134,240),
    rgba(50,134,240, 0.5)),
    url(img/bgg.jpg) no-repeat center;
    background-size: cover;
     color: #fff;
+    padding: 1rem;
 }
 /* ////////////////////////////////////////Contact/////////////////////////////////////////////////// */
 #contact{
@@ -398,24 +400,16 @@ button{
     }
     /* //////////////////////////////////////////////////////// */
     #testing-type{
-        margin-bottom: 1rem;
+        padding: 3rem;
         height: auto;
+        margin: auto;
     }
     .testing-type-bd{
         position: relative;
-        width: 100%;
-        padding: 1rem;
-    }
-    .testing-box-1{
+        
         display: none;
     }
     
-    .testing-box-2{
-        display: none;
-    }
-    .testing-box-3{
-        display: none;
-    }
     .testing-mob{
         display: block;
         position: relative;
@@ -431,7 +425,7 @@ button{
         outline: 0.2rem solid var(--yell-col);
     }
     #contact{
-        padding: 7rem 10px;
+        padding: 5rem 10px;
     }
     .contact-section-parts{
         height: auto;
