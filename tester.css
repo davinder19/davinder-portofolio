@@ -138,10 +138,11 @@ background-color: var(--option-bg);
  #bug-test{
      padding:  15rem 10px;
      background: linear-gradient(to right bottom,
-     rgba(255,255,255,0.9),
-     rgba(255,255,255,.8)),
-    url(img/portfolio.jpg) no-repeat center;
+     rgba(71,78,63,0.9),
+     rgba(26,31,20,0.8)),
+    url(img/testing-bck.jpg) no-repeat center;
     background-size: cover;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
     transform: skewY(-3deg);
 
  }
@@ -312,7 +313,7 @@ position: relative;
     
 }
 .cont-part-2{
-    
+    position: relative;
 }
 .item{
     width:100%;
@@ -338,15 +339,6 @@ input{
 input:focus{
     outline: none;
 }
-/* .text-input{
-    width: 70%;
-    margin-top: 1rem;
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 5px;
-    
-    
-} */
 textarea{
     width: 70%;
     margin-top: 1rem;;
@@ -374,6 +366,23 @@ button{
     font-size: 1rem;
     color:  #fff;
     border: none;
+}
+.address-item{
+    /* position: relative;
+    border: 1px solid brown; */
+}
+.address-item i{
+  font-size: 3rem;
+  color: #333;
+  
+}
+.address-ticket{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 2px solid var(--yell-col);
+    padding: 5px;
+    background-color: var(--yell-col);
 
 }
 
@@ -448,5 +457,8 @@ button{
     }
     button{
         width: 50%;;
+    }
+    .address-ticket{
+        display: none
     }
 }
