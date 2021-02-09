@@ -424,8 +424,9 @@ button{
     .contact-section-1{
         padding: 1rem;
     }
-    .contact-part-1{
-        padding: 1rem 0;
+    .cont-part-1{
+        height: 500px;
+        padding: 2rem 0;
     }
     input{
         width: 80%;
