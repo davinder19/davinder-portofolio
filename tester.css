@@ -138,9 +138,9 @@ background-color: var(--option-bg);
  #bug-test{
      padding:  15rem 10px;
      background: linear-gradient(to right bottom,
-     rgba(250,177,49,0.9),
-    rgba(230,157,39, 0.5)),
-    url(img/break.jpg) no-repeat center;
+     rgba(255,255,255,0.9),
+     rgba(255,255,255,.8)),
+    url(img/portfolio.jpg) no-repeat center;
     background-size: cover;
     transform: skewY(-3deg);
 
@@ -425,7 +425,7 @@ button{
         padding: 1rem;
     }
     .cont-part-1{
-        height: 500px;
+        /* height: 500px; */
         padding: 2rem 0;
     }
     input{
