@@ -175,21 +175,21 @@
     position:absolute;
     bottom: -27px;
     left: 0;
-    animation: packmove 1.2s infinite;
+    animation: packmove 0.8s infinite;
 }
 .arrow-mov-3{
     position:absolute;
     bottom: 0px;
     left: -27px;
     transform: rotate(90deg);
-    animation: packmoveup 1.0s infinite;
+    animation: packmoveup 0.8s infinite;
 }
 .arrow-mov-4{
     position:absolute;
     bottom: 0px;
     right:-27px ;
     transform: rotate(90deg);
-    animation: packmoveup 1.5s infinite;
+    animation: packmoveup 0.8s infinite;
 }
 
 
@@ -223,7 +223,7 @@
 @media(max-width:60rem){
     .net-system-dimanod{
         width: 100%;
-        height: 60%;
+        height: 75%;
     }
     .net-system-dimanod h1{
         font-size: 1.5rem;

@@ -35,8 +35,8 @@ background-color: var(--option-bg);
     position: relative;
 }
 
-.bug-fre i{
-    font-size: 5rem;
+.bugy{
+    font-size: 1rem;
     color: var(--yell-col);
 }
 .tester-stuff .hd-2{
@@ -522,6 +522,7 @@ button{
        left: 8%;
         
       }
+      
       @keyframes change {
         /* 0%   { color: blue; left:10%; top:10%;} */
         5%  { color: orange; transform: translateX(-10px);}
