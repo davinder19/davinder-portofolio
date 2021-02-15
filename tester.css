@@ -8,7 +8,123 @@
 body{
 background-color: var(--option-bg);
 }
+/* .container{
+    position: relative;
+    width: 100%;
+    height: 80%;
+} */
+.tester-content{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+    
 
+}
+.tester-stuff{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid teal; */
+    position: relative;
+}
+
+.bug-fre i{
+    font-size: 5rem;
+    color: var(--yell-col);
+}
+.tester-stuff .hd-2{
+    text-align: justify;
+ 
+}
+
+.hd-2 i{
+    font-size: 5rem;
+    color: var(--yell-col);
+    animation: change 5s infinite;
+}
+.hd-2 h2{
+    font-size: 1rem;
+    color: var(--yell-col);
+
+}
+.tester-content h1{
+    color: #ffff;
+    font-size: 10rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.tester-content .fa-bug{
+    position: absolute;
+    color: var(--primary-color);
+  
+
+}
+.main-bug{
+  color: red;
+  position: absolute;
+  font-size: 4rem;
+  transform: rotate(45deg);
+  top: 20%;
+  left: 10%;
+  
+}
+.bug-2{
+    color: teal;
+    animation: move 8s infinite;
+    /* top: 80%;
+    left: 80%; */
+    
+  }
+  .bug-3{
+    color: red;
+    animation: move 10s infinite;
+    
+  }
+  .bug-4{
+    color: blue;
+    animation: move 11s infinite;
+    
+  }
+  .bug-5{
+    color: purple;
+    animation: move 12s infinite;
+    
+    
+  }
+  .bug-6{
+    color: purple;
+    animation: move 5s infinite;
+    
+    
+  }
+  @keyframes move {
+    /* 0%   { color: blue; left:10%; top:10%;} */
+    5%  { color: orange; left:0%; top:40%; opacity:0;}
+    10%  { color: orange; left:50%; top:50%; opacity: 1;}
+    35%  { color: red; left:20%; top:47%; transform: scale(1.1);}
+    50%  { color:teal; left:60%; top:30%;}
+    75%  {color:tomato; left:46%; top:58%;}
+    85%  { color: orange; left:60%; top:20%;}
+    100% { left:10%; top:10%;}
+  }
+  @keyframes change {
+    /* 0%   { color: blue; left:10%; top:10%;} */
+    5%  { color: orange; transform: translateX(-10px);}
+    15%  { color:yellow; transform: translateX(-100px);}
+    25%  { color: red; transform: translateX(-300px);}
+    35%  { color: red; transform: translateX(-400px) translateY(20px) scale(1.2); }
+    50%  { color:teal; transform: translateX(-500px);}
+    75%  {color:tomato; transform: translateX(-250px);}
+    85%  { color: orange; transform: translateX(-50px)}
+    100% { transform: translateX(0px)}
+  }
 #tools{
     width: 100%;
     background-color: #f9f9f9;
@@ -390,6 +506,32 @@ button{
  
 /* ///////////////////////////////////////////////////////MOB-RESPONSIVE//////////////////////////////////// */
 @media(max-width:60rem){
+    .tester-content h1{
+        font-size: 4rem;
+    }
+    .hd-2 i{
+        font-size: 2.5rem;
+    }
+    .hd-2 h2{
+        font-size: 0.5rem;
+        list-style: 0
+    }
+    .bug-fre .main-bug{
+        font-size: 2rem;
+       top: 2%;
+       left: 8%;
+        
+      }
+      @keyframes change {
+        /* 0%   { color: blue; left:10%; top:10%;} */
+        5%  { color: orange; transform: translateX(-10px);}
+        15%  { color:yellow; transform: translateX(-50px);}
+        25%  { color: red; transform: translateX(-150px);}
+        50%  { color:teal; transform: translateX(-200px);}
+        75%  {color:tomato; transform: translateX(-150px);}
+        85%  { color: orange; transform: translateX(-50px)}
+        100% { transform: translateX(0px)}
+      }
     .tools{
         margin-top: 0;
     }

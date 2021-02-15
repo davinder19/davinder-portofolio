@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;  
+}
+.network-system{
+    width: 350px;
+    margin: auto;
+    height: 600px;
+    border: 5px solid greenyellow;
+    position: relative;
+}
+.net-icon{
+    font-size: 3rem;
+    color: #ffff;
+}
+.net{
+    position:absolute;
+}
+.cloud{ 
+    position: absolute;
+    top: 5%;
+}
+.server{
+    position: absolute;
+    top: 8%;
+    right: 2%;
+}
+.router{
+    top:30%;
+    left:50%;
+    transform: translate(-50%)
+}
+.switch{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%)
+}
+.device-1{
+    top: 75%;
+    left: 2%;
+}
+.device-2{
+    top: 75%;
+    right: 2%;
+}
+.serial-1{
+    content: " ";
+    width: 65%;
+    background-color: var(--yell-col);
+    height: 2px;
+    position: absolute;
+    top: 12%;
+    left: 18%;
+    transform: rotate(5deg);
+}
+.serial-2{
+    content: " ";
+    width: 50%;
+    background-color: var(--yell-col);
+    height: 2px;
+    position: absolute;
+    top: 22%;
+    left: 7%;
+    transform: rotate(45deg);
+}
+.serial-3{
+    content: " ";
+    width: 28%;
+    background-color: var(--yell-col);
+    height: 2px;
+    position: absolute;
+    top: 47%;
+    left: 37%;
+    transform: rotate(90deg);
+}
+.serial-4{
+    content: " ";
+    width: 48%;
+    background-color: var(--yell-col);
+    height: 2px;
+    position: absolute;
+    top: 67%;
+    left: 7%;
+    transform: rotate(125deg);
+}
+.serial-5{
+    content: " ";
+    width: 48%;
+    background-color: var(--yell-col);
+    height: 2px;
+    position: absolute;
+    top: 67%;
+    right: 7%;
+    transform: rotate(45deg);
+}
+.cloud{
+    border: 2px solid red;;
+}
+.connect{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    
+    z-index: 10;
+}
+.cloud-connect{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+}
+.server-connect{
+    position: absolute;
+    bottom: 30%;
+    left: 0%;
+}
+.router-connect-1{
+    position: absolute;
+    top: 0%;
+    left: 20%;
+}
+.router-connect-2{
+    position: absolute;
+bottom: 0%;
+    left: 35%;
+}
+.switch-connect-1{
+    position: absolute;
+  bottom: 0%;
+ left: 65%;
+}
+.switch-connect-2{
+    position: absolute;
+  bottom: 20%;
+ left: -10%;
+}
