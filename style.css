@@ -745,7 +745,7 @@ footer i:hover{
     height: 50px;
     position: absolute;
     top: 0;
-    left: -35%;
+    left: -16%;
     transition: 1s ease-in;
     
    
@@ -785,10 +785,10 @@ footer i:hover{
     /* background-color: blue; */
     transform: rotateZ(-45deg);
 }
-.message-show .btn-remove{
+/* .message-show .btn-remove{
     transition: 1s ease-in;
     left: -15%;
-}
+} */
 
   
 /* //////////////////////////////Mob Responsive////////////////////// */
