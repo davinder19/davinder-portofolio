@@ -745,12 +745,13 @@ footer i:hover{
     height: 50px;
     position: absolute;
     top: 0;
-    left: -15%;
+    left: -35%;
+    transition: 1s ease-in;
     
    
 }
 .btn-remove-btn{
-    width: 1005;
+    width: 100%;
     height: 100%;
     text-align: center;
     position: relative;
@@ -775,7 +776,7 @@ footer i:hover{
     background-color: #ffff;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 18%;
     
     transform: rotate(90deg);
     
@@ -783,6 +784,10 @@ footer i:hover{
 .message-show .btn-remove-btn{
     /* background-color: blue; */
     transform: rotateZ(-45deg);
+}
+.message-show .btn-remove{
+    transition: 1s ease-in;
+    left: -15%;
 }
 
   
