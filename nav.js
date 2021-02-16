@@ -1,14 +1,38 @@
 
 //////////////////////////////////NavBar///////////////////////////////
 const nav = document.querySelector('.nav')
+const btnremove = document.querySelector('.btn-remove')
 window.addEventListener('scroll', fixNav)
+// window.addEventListener('scroll', messageShow)
+const message = document.querySelector('.message')
+const btnRemove = document.querySelector('.btn-remove').addEventListener("click", showRemove);
 
 function fixNav() {
     if(window.scrollY > nav.offsetHeight + 150) {
         nav.classList.add('act')
+        
     } else {
         nav.classList.remove('act')
     }
+}
+// function messageShow(e) {
+  
+//   if(window.scrollY > message.offsetHeight + 800) {
+    
+//       message.classList.add('message-show')
+//   } else {
+//     message.classList.remove('message-show')
+//   }
+//   e.preventDefault()
+  
+// }
+function showRemove(e) {
+  
+  // element.classList.toggle("mystyle");
+      message.classList.toggle('message-show')
+  
+  e.preventDefault()
+  
 }
 
 ////////////////////////Sidebar///////////////////////

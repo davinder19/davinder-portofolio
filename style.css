@@ -218,10 +218,10 @@ p{
 
 
    .hero{
-       background-image: url(img/programmer.jpg);
+       background-image: url(img/bgg.jpg);
        background-repeat: no-repeat;
        background-size: cover;
-       background-position: center;
+       background-position:center;
        height: 100vh;
        color: #fff;
        /* background-position: bottom center; */
@@ -245,12 +245,16 @@ p{
        z-index: -1;
        
    }
-    .hero h1{
-        font-size: 40px;
+    .hero .header-1{
+        font-size: 80px;
         margin:-20px 0 20px ;
         font-family: 'Pacifico', sans-serif;
         color: var(--primary-color);
         font-weight:bold;
+    }
+    .hero h2{
+        color: var(--yell-col);
+        font-size: 1.8rem;
     }
     .time-date{
         position: absolute;
@@ -712,10 +716,81 @@ footer i:hover{
     transform: scale(1);
     
 }
+.message{
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: fixed;
+    bottom: 20%;
+    right: -16%;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.8);
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+     /* transform: scale(0.8); */
+    
+    
+}
+.message-show{
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    right: 0%;
+    
+}
+.btn-remove{
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: -15%;
+    
+   
+}
+.btn-remove-btn{
+    width: 1005;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    transform: rotateZ(0deg);
+    
+    
+}
+.right{
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.left{
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    
+    transform: rotate(90deg);
+    
+}
+.message-show .btn-remove-btn{
+    /* background-color: blue; */
+    transform: rotateZ(-45deg);
+}
 
   
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){
+    .hero .header-1{
+        font-size: 35px;
+    }
     .main-header, .main-header-col-2{
         font-size: 25px;
     }
@@ -795,6 +870,10 @@ footer i:hover{
 .footer-items h2{
     font-size: 16px;
     
+}
+.message-shownothing{
+    opacity: 0;
+    display: none;
 }
 
 }
