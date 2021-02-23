@@ -366,7 +366,7 @@ padding: 5px;
     }
     25%{
         top:50%;
-        background-color: blue;
+        background-color: lightcoral;
     }
     /* 30%{
         top:33%;
@@ -375,15 +375,15 @@ padding: 5px;
     } */
     45%{
         top:75%;
-        color: purple;
+        color: lightyellow;
     }
     50%{
         top:90%;
-        color: maroon;
+        color: yellow;
     }
     60%{
         top:75%;
-        color: mediumaquamarine;
+        color: goldenrod;
     }
     70%{
         top:50%;

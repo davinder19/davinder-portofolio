@@ -30,10 +30,18 @@ function showRemove(e) {
   
   // element.classList.toggle("mystyle");
       message.classList.toggle('message-show')
+      // message.style.display ='none';
+      // setTimeout(clearResult, 8000);
   
   e.preventDefault()
   
+  
 }
+// function clearResult(){
+
+  
+//   message.style.display ='block';
+// }
 
 ////////////////////////Sidebar///////////////////////
 var header = document.getElementById("parents");

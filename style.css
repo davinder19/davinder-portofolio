@@ -251,11 +251,20 @@ p{
         font-family: 'Pacifico', sans-serif;
         color: var(--primary-color);
         font-weight:bold;
+        animation: showup 0.5s ease-in-out;
+        
     }
+    
     .hero h2{
         color: var(--yell-col);
         font-size: 1.8rem;
+        animation: showup 2.5s ease-in-out;
     }
+    @keyframes showup {
+        0%   { opacity: 0;}
+        50%  { opacity: 0; transform: translateY(100px);}
+        100% { transform: scale(1) translateY(0px);}
+      }
     .time-date{
         position: absolute;
         bottom: 50px;
@@ -581,7 +590,7 @@ transform: scale(1);
 }
 
 .edu{
-    transform: scale(0.95);
+    transform: scale(1);
     transition: 0.4s transform ease-in-out;
 
 }
@@ -596,7 +605,7 @@ transform: scale(1);
     color: var(--yell-col);
 }
 .edu:hover{
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 /* //////////////////Introduction///////////////////////////////////////////////////// */
@@ -716,26 +725,44 @@ footer i:hover{
     transform: scale(1);
     
 }
-.message{
+/* .message{
     width: 300px;
     padding: 2rem;
     text-align: center;
     background-color: #f9f9f9;
     position: fixed;
     bottom: 20%;
-    right: -16%;
+    right: 0%;
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.8);
-    /* display: none; */
-    transition: all 0.8s ease-in-out;
-     /* transform: scale(0.8); */
+    transition: all 2s ease-in;
+     animation:  showmessage 0.5s ease-in-out ;
+     
+     
     
     
 }
+@keyframes showmessage {
+    0%{opacity: 0;
+        transform: scale(0);
+    
+    }
+    50%  { opacity: 1; transform: scale(1.1);
+        transform: scale(1);
+        transform: scale(1.1);}
+     
+     80%  { opacity: 1; transform: scale(1);
+     }
+        
+     
+       100%{
+        
+            transform: scale(1);}
+  }
 .message-show{
-    display: block;
-    opacity: 1;
-    transform: scale(1);
-    right: 0%;
+    display: none;
+    opacity: 0;
+    transform: scale(0);
+    
     
 }
 .btn-remove{
@@ -755,7 +782,7 @@ footer i:hover{
     height: 100%;
     text-align: center;
     position: relative;
-    transform: rotateZ(0deg);
+    transform: rotateZ(-45deg);
     
     
 }
@@ -782,15 +809,117 @@ footer i:hover{
     
 }
 .message-show .btn-remove-btn{
-    /* background-color: blue; */
     transform: rotateZ(-45deg);
+}
+.message-show .btn-remove{
+    transition: 1s ease-in;
+    left: -15%;
+} */
+/* ///////////////git copt///////////////////// */
+
+.message{
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: fixed;
+    bottom: 20%;
+    right: -16px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.8);
+    /* display: none; */
+    transition: 1s all ease-in-out;
+    animation:  showmessage 1s ease-in 5S;
+    animation-fill-mode: backwards;
+    
+    
+}
+@keyframes showmessage {
+    0%{opacity: 0;
+        transform: scale(0);
+    
+    }
+    50%  { opacity: 1; transform: scale(1.1);
+        transform: scale(1);
+        transform: scale(1.1);}
+     
+     80%  { opacity: 1; transform: scale(1);
+     }
+        
+     
+       100%{
+        
+            transform: scale(1);}
+  }
+.message-show{
+    /* display: block; */
+    /* opacity: 1; */
+    transform: scale(1);
+    right: -300px;
+    transition: 1s all ease-in-out;
+    
+}
+.btn-remove{
+    border: 2px solid orange;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: -16%;
+    transition: 1s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+}
+.btn-remove-btn{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    transform: rotateZ(-45deg);
+    transition: 1s ease-in;
+    /* border: 2px solid gray; */
+    
+}
+.right{
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.left{
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    
+    transform: rotate(90deg);
+    
+}
+.message-show .btn-remove-btn{
+    /* background-color: blue; */
+    /* transform: rotateZ(0deg); */
+    transform: rotate(990deg);
+}
+.message-show .btn-remove{
+    /* background-color: blue; */
+    
 }
 /* .message-show .btn-remove{
     transition: 1s ease-in;
     left: -15%;
 } */
 
-  
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){
     .hero .header-1{
