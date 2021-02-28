@@ -476,14 +476,14 @@ padding: 5px;
 .news-img-box-1{
     float: left;
     shape-outside: circle(50% at 50% 50%);
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 
 }
 .news-img-box-2{
     float: right;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 .net-news-part p{
     font-size: 1.5rem;

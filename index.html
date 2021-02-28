@@ -12,6 +12,7 @@
     <nav class="nav">
         <div class="nav-contain">
             <!-- <h2 class="logo"> -->
+                <!-- <a href="index.html" class="logo">D-DEV</a> -->
                 <a href="index.html" class="logo">D-DEV</a>
             <!-- </h2> -->
             <ul>
@@ -246,8 +247,8 @@
         <h4>Punjab University</h4></a>
         </div>
         <div class="edu"><a href=""><i class="fas fa-university"></i><h3>MSC-IT</h3> <h4>Punjab Technical University</h4></a></div>
-        <div class="edu"><a href=""><i class="fas fa-network-wired"></i><h3>CCNA</h3> <h4>Network Academy</h4></a></div>
-        <div class="edu"><a href=""><i class="fas fa-laptop-code"></i><h3>DEV & TEST</h3> <h4>Udemy</h4></a></div>
+        <div class="edu"><a href="https://www.youracclaim.com/badges/98abfdfa-4450-42a0-9b4f-4a5018a5d30b" target="blank"><i class="fas fa-network-wired"></i><h3>CCNA</h3> <h4>Network Academy</h4></a></div>
+        <div class="edu"><a href="https://www.udemy.com/certificate/UC-PI2UA6SW/" target="blank"><i class="fas fa-laptop-code"></i><h3>DEV & TEST</h3> <h4>Udemy</h4></a></div>
 
 
         
@@ -273,8 +274,11 @@
             <h1>Davinder Singh</h1>
              <p>davinder-web@gmail.com</p>
             <p>Sacramento CA</p>
-            <p>For More Info Download My Resume</p>
-            <a href="/Davinder_Web-developer.pdf" class="own-btn" download="click">Resume</a>
+            <h3>Working experience</h3>
+            <p> 9+ years experience working as a Plant Breeder Assistant </p>
+            <p>Looking for entry level IT Position for new Beginning</p>
+            <!-- <p>For More Info Download My Resume</p>
+            <a href="/Davinder_Web-developer.pdf" class="own-btn" download="click">Resume</a> -->
             
             
         </div>
@@ -288,12 +292,15 @@
             <h1 class="main-header">Contact & My Resume</h1>
             <div class="contact-section-parts mrg-big">
             <div class="contact-section-1 cont-part-1"> 
-                <form action="">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div class="form-field">
-            <input type="text" class="text-input name-input" placeholder="Full Name" required>
-            <input type="email" class="text-input email-input" placeholder="Email Address" required>
-            <input type="text" class="text-input phone-input" placeholder="Phone Number" required>
-            <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+            <input type="text" class="text-input name-input" placeholder="Full Name" name="name" required>
+            <input type="email" class="text-input email-input" placeholder="Email Address" name="email" required>
+            <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" required>
+            <input type="text" class="text-input phone-input" placeholder="Subject" name="subject" required>
+            <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+            <div class="mrg"></div>
+            <div data-netlify-recaptcha="true"></div>
         </div>
         <button class="own-btn">Submit</button>
     </form>

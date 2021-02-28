@@ -211,8 +211,14 @@ p{
    .logo{
     background-color: var(--primary-color);
     
+    border-radius: 50px;
     
 }
+/* .d-dev{
+ border:  2px solid var(--yell-col);
+ padding: 20px;
+ border-radius: 50%;
+} */
    /* ********************************************* */
 
 
@@ -241,8 +247,12 @@ p{
        left: 0;
        width: 100%;
        height: 100%;
-       background-color: rgba(0,0,0,0.6);
-       z-index: -1;
+       /* background-color: rgba(0,0,0,0.7); */
+       background: linear-gradient(to right bottom,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.4));
+    z-index: -1;
+       
        
    }
     .hero .header-1{
@@ -909,7 +919,7 @@ footer i:hover{
 .message-show .btn-remove-btn{
     /* background-color: blue; */
     /* transform: rotateZ(0deg); */
-    transform: rotate(990deg);
+    transform: rotate(540deg);
 }
 .message-show .btn-remove{
     /* background-color: blue; */
