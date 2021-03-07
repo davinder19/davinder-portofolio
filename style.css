@@ -9,7 +9,8 @@
    --option-bg:#f9f9f9;
    --purpl-color:#da70d6;
    --sue-me: #3a4e62;
-   --yell-col: #fab131;
+   /* --yell-col: #fab131; */
+   --yell-col: #f2aa4cff;
    --blu-col:#29487D;
    
 }
@@ -369,7 +370,7 @@ transform: scale(1);
 #about{
     padding: 8rem 0;
     text-align: center;
-    background-color: #fab131;
+    background-color: var(--yell-col);
     
  
 }
@@ -887,8 +888,8 @@ footer i:hover{
     
 }
 .btn-remove{
-    border: 2px solid orange;
-    background-color: orange;
+    border: 2px solid var(--yell-col);
+    background-color: var(--yell-col);
     width: 50px;
     height: 50px;
     position: absolute;
@@ -965,9 +966,13 @@ footer i:hover{
   .hero h1{
       font-size: 20px;
   }
+  
   .hero h2{
-      font-size: 15px;
-  }
+    font-size: 15px;
+}
+.hero h3{
+    font-size: 0.8rem;
+}
   .d-dev{
       display: none;
   } 

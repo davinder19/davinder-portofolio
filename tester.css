@@ -174,7 +174,7 @@ background-color: var(--option-bg);
 }
 .tools{
         margin-top: -170px;
-    
+    padding: 2rem 0;
 
    /* border: 3px solid teal; */
    border: 3px solid rgba(0,0,0,0.1);
@@ -443,7 +443,7 @@ position: relative;
 .testing-type-bd:hover{
     z-index: 10;
     transform: scale(1.05);
-    outline: 1rem solid var(--yell-col);
+    outline: 0.8rem solid var(--sue-me);
 }
 .testing-mob{
     display: none;
