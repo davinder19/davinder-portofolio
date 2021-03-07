@@ -154,7 +154,8 @@ function setTime() {
 
   // timeEl.innerHTML =`${hoursForClock}`
   timeEl.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
-  dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`
+  // dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`
+  dateEl.innerHTML = `${days[day]}, ${months[month]} ${date}`
   // setInterval(setTime, 1000)
 }
 
