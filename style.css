@@ -167,7 +167,7 @@ p{
        display: flex;
        justify-content: space-between;
        align-items: center;
-       padding: 10px 0;
+       padding: 14px 0;
        transition:  all 0.3s  ease-in-out;
    }
    .nav ul{
@@ -179,7 +179,7 @@ p{
    .nav a,.nav.lia{
        color:   #fff;
        text-decoration: none;
-       padding: 7px 15px;
+       padding: 0 15px;
        font-size: 13px;
        transition:  all 0.3s  ease-in-out;
         transform: scale(0.8);
@@ -197,7 +197,7 @@ p{
        color: #fff;
    }
    .nav.act .nav-contain{
-       padding: 5px 0;
+       padding: 8px 0;
    }
    .lia.current{
     color: var(--primary-color);
