@@ -49,7 +49,7 @@ body{
     color: var(--yell-col);
 }
 .mrg-mid{
-    margin-top: 80px; 
+    margin-top: 8px; 
 }
 .mrg{
     margin-top: 1rem;
@@ -293,8 +293,10 @@ p{
         bottom: 50px;
         right: 50px;
         font-family: "Roboto", sans-serif;
+
         
     }
+    
     .d-dev   {
         font-family: 'Pacifico', sans-serif;
         font-size:15px;
@@ -858,9 +860,21 @@ footer i:hover{
     /* display: none; */
     transition: 1s all ease-in-out;
     animation:  showmessage 1s ease-in 5S;
-    animation-fill-mode: backwards;
+    animation-fill-mode: backwards;   
+}
+.mssg{
+    text-decoration: none;
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color:var(--blu-col);
+
+}
+.mssg:hover{
     
     
+    color:var(--yell-col);
+
 }
 @keyframes showmessage {
     0%{opacity: 0;
