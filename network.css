@@ -463,7 +463,7 @@ padding: 5px;
 
 .net-news-part{
     width: 70%;
-    border: 5px solid green;
+    border: 5px solid var(--yell-col);
     margin: auto;
     margin-top: 5rem;
     padding: 3rem;
