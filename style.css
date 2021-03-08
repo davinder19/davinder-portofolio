@@ -212,19 +212,73 @@ p{
        transform: scale(1);
        
    }
-  .nav .logo img{
-    /* background-color: var(--primary-color); */
-    /* background-color: var(--yell-col); */
-    /* font-size: 18px; */
+  /* .nav .logo img{
     width: 80px;
     height: 50px;
     
-}
-/* .d-dev{
- border:  2px solid var(--yell-col);
- padding: 20px;
- border-radius: 50%;
 } */
+.sun-mode{
+    /* width:100px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sun-mode h2{
+    font-size: 20px;
+    color: #f9f9f9;
+    margin-top: 10px;
+    font-family: 'Pacifico', sans-serif;
+}
+.nav .logo{
+    width:50px;
+    height: 50px;
+    position: relative;
+    border-radius:50% ;
+    
+    /* overflow: hidden; */
+    /* animation: sunmoon 3.5s ease-in-out; */
+}
+.sun{
+    width:50px;
+    height: 50px;
+    background-color: var(--bg-color);
+    
+    border-radius:50% ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.moon{
+    width:100%;
+    height: 100%;
+    background-color: #000;
+    border-radius:50% ;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+}
+.nav.act .moon{
+    opacity: 0;
+}
+.nav.act .sun{
+    background-color: var(--yell-col);
+}
+.nav.act .sun-mode h2{
+    color: var(--blu-col);
+}
+.pls-1{
+animation: sunmoon 1s infinite;
+}
+.pls-2{
+    animation: sunmoon 1.2s infinite;
+}
+@keyframes sunmoon {
+    
+    50%  { color: var(--blu-col);}
+    100% { color: var(--yell-col);}
+  }
+
    /* ********************************************* */
 
 
@@ -965,6 +1019,10 @@ footer i:hover{
 
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){
+    .sun-mode h2{
+        font-size: 15px;
+        margin-top: 0;
+    }
     .hero .header-1{
         font-size: 35px;
     }
