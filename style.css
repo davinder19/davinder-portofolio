@@ -212,11 +212,11 @@ p{
        transform: scale(1);
        
    }
-  /* .nav .logo img{
+  .nav .logo img{
     width: 80px;
     height: 50px;
     
-} */
+}
 .sun-mode{
     /* width:100px; */
     display: flex;
@@ -1019,10 +1019,7 @@ footer i:hover{
 
 /* //////////////////////////////Mob Responsive////////////////////// */
 @media(max-width:60rem){
-    .sun-mode h2{
-        font-size: 15px;
-        margin-top: 0;
-    }
+    
     .hero .header-1{
         font-size: 35px;
     }
