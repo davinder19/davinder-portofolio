@@ -227,7 +227,7 @@ background-color: var(--option-bg);
     width: 50%;
     padding: 10px;
     position: relative;
-    background-color: orange;
+    background-color: var(--yell-col);
     box-shadow: 0 5px 1rem rgba(0,0,0,0.8);
     transition: 1s all ease-in;
     animation: chngcolor 5s infinite;
